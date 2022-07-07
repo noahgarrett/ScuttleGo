@@ -1,9 +1,7 @@
 package main
 
 import (
-	"ScuttleGo/api"
 	"ScuttleGo/riot/lol"
-	"fmt"
 )
 
 type Client struct {
@@ -22,7 +20,7 @@ func CreateClient(apiKey string) *Client {
 	return client
 }
 
-func main() {
-	scuttle := CreateClient("<Api Key Here>")
-	fmt.Println(scuttle.LoL.Summoner.GetByName(api.RegionNorthAmerica, "C9Beemo").SummonerLevel)
-}
+//func main() {
+//	scuttle := CreateClient("<API Key Here>")
+//	fmt.Println(scuttle.LoL.Summoner.GetByAccountId(api.RegionNorthAmerica, "Hyy3p4ZLAzRI4Nm2etYxRExzrYEM1B-yzs99ciEiZPoz6GfFVUJsSFSm").Name)
+//}

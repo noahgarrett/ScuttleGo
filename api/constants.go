@@ -1,5 +1,12 @@
 package api
 
+// BaseUrl represents the base url for each api
+type BaseUrl string
+
+const (
+	LolBaseUrl BaseUrl = "api.riotgames.com"
+)
+
 // Region represents a server region
 type Region string
 
