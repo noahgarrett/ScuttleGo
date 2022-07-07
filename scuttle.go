@@ -1,4 +1,4 @@
-package main
+package ScuttleGo
 
 import (
 	"ScuttleGo/riot/lol"
