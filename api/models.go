@@ -9,3 +9,20 @@ type SummonerDTO struct {
 	Puuid         string
 	SummonerLevel int64
 }
+
+type ChampionRotationDTO struct {
+	MaxNewPlayerLevel            int
+	FreeChampionIdsForNewPlayers []int
+	FreeChampionIds              []int
+}
+
+type ChampionMasteryDTO struct {
+	ChampionPointsUntilNextLevel int64
+	ChestGranted                 bool
+	ChampionId                   int64
+	ChampionLevel                int
+	SummonerId                   string
+	ChampionPoints               int
+	ChampionPointsSinceLastLevel int64
+	TokensEarned                 int
+}
