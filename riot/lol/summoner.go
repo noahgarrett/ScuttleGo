@@ -1,9 +1,9 @@
 package lol
 
 import (
-	"ScuttleGo/api"
-	"ScuttleGo/internal"
 	"encoding/json"
+	"github.com/noahgarrett/scuttlego/api"
+	"github.com/noahgarrett/scuttlego/internal"
 )
 
 type SummonerClient struct {

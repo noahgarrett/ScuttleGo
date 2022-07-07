@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"ScuttleGo/api"
 	"fmt"
+	"github.com/noahgarrett/scuttlego/api"
 	"net/http"
 )
 

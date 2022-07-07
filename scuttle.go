@@ -1,7 +1,7 @@
 package scuttlego
 
 import (
-	"scuttlego/riot/lol"
+	"github.com/noahgarrett/scuttlego/riot/lol"
 )
 
 type Client struct {
