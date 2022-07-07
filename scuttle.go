@@ -1,7 +1,7 @@
-package ScuttleGo
+package scuttlego
 
 import (
-	"ScuttleGo/riot/lol"
+	"scuttlego/riot/lol"
 )
 
 type Client struct {

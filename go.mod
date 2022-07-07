@@ -1,3 +1,3 @@
-module ScuttleGo
+module scuttlego
 
 go 1.18
