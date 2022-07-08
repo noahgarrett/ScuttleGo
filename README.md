@@ -7,8 +7,11 @@ supported endpoints. This library is in its BETA stage, and numerous additions a
 - Summoner-V4
 - Champion-V3
 - Champion-Mastery-V4
+- League-V4
 
 ## Example Usage
+`go get github.com/noahgarrett/scuttlego`
+
 ```go
 package ScuttleExample
 
