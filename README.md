@@ -10,6 +10,8 @@ supported endpoints. This library is in its BETA stage, and numerous additions a
 - League-V4
 
 ## Example Usage
+`go get github.com/noahgarrett/scuttlego`
+
 ```go
 package ScuttleExample
 
