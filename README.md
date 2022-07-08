@@ -24,7 +24,8 @@ func main() {
 	summoner := scuttle.LoL.Summoner.GetByName(api.RegionNorthAmerica, "C9Beemo")
 	rotation := scuttle.LoL.Champion.GetRotation(api.RegionNorthAmerica)
 	masteries := scuttle.LoL.Mastery.GetAllMasteriesBySummoner(api.RegionNorthAmerica, "a5TZtZswIYxOelDN8yRvenmTmeDVNwBRUC01CZnnCP0uE3PrHlbjHbFAkQ")
-
+	entries := scuttle.LoL.League.GetEntriesByQueue(api.RegionNorthAmerica, "RANKED_SOLO_5x5", "BRONZE", "I", "1")
+	
 	fmt.Println(summoner.Puuid)
 }
 ```

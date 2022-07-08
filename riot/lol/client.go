@@ -5,6 +5,7 @@ type LolClient struct {
 	Summoner *SummonerClient
 	Champion *ChampionClient
 	Mastery  *MasteryClient
+	League   *LeagueClient
 }
 
 func CreateClient(apiKey string) *LolClient {
@@ -13,5 +14,6 @@ func CreateClient(apiKey string) *LolClient {
 		Summoner: &SummonerClient{apiKey: apiKey},
 		Champion: &ChampionClient{apiKey: apiKey},
 		Mastery:  &MasteryClient{apiKey: apiKey},
+		League:   &LeagueClient{apiKey: apiKey},
 	}
 }

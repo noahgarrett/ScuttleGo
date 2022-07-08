@@ -19,12 +19,14 @@ func (m *MasteryClient) GetAllMasteriesBySummoner(region api.Region, summonerId 
 	json.NewDecoder(res.Body).Decode(&masteryList)
 
 	return masteryList
+
 }
 
 // GetChampionMasteryBySummoner returns a ChampionMastery object for specific champion requested from a summoner
 func (m *MasteryClient) GetChampionMasteryBySummoner(region api.Region, summonerId string, championId int64) *api.ChampionMasteryDTO {
 	client := http.Client{}
-	url := "https://" + string(region) + "." + string(api.LolBaseUrl) + "/lol/champion-mastery/v4/champion-masteries/by-summoner/" + summonerId + "/by-champion/" + string(championId)
+	url := "https://" + string(region) + "." + string(api.LolBaseUrl) +
+		"/lol/champion-mastery/v4/champion-masteries/by-summoner/" + summonerId + "/by-champion/" + string(championId)
 	req, _ := http.NewRequest("GET", url, nil)
 	req.Header.Set("X-Riot-Token", m.apiKey)
 	res, _ := client.Do(req)
